@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{list-style: none;}
+        .container{
+            text-align: center;
+            
+        }
+        .container ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .container ul>li:nth-child(1){
+            width: 300px; height: 250px;
+            background-color: aqua;
+            
+        }
+        .container ul>li:nth-child(2){
+            width: 300px; height: 300px;
+            background-color: sandybrown;
+        }
+        .container ul>li:nth-child(3){
+            width: 300px; height: 300px;
+            background-color: rosybrown;
+        }
+        .container ul>li:nth-child(4){
+            width: 300px; height: 300px;
+            background-color: hotpink;
+        }
+        .container ul>li:nth-child(5){
+            width: 300px; height: 300px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>box1</li>
+            <li>box2</li>
+            <li>box3</li>
+            <li>box4</li>
+            <li>box5</li>
+        </ul>
+    </div>
+</body>
+</html>

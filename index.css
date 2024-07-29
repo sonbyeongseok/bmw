@@ -1,0 +1,692 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none; color: black;}
+img{border: 0; vertical-align: top;}
+.clearFix::after{
+    content: ""; display: block; clear: both;
+}
+
+
+#header{
+    width: 100%; height: 1200px;
+    /* padding-bottom: 1200px; */
+    background-image: url(images/bmwmain.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: top left;
+    position: relative;
+}
+#header .top{
+    color: white;
+}
+#header .top .burger{
+    position: absolute;
+    right: 7%; top: 7%;
+}
+:root{
+    --side-bar-width:270px;
+    --side-bar-height:90vh;
+}
+.sidebar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.647);
+    width: var(--side-bar-width);
+    min-height: var(--side-bar-height);
+    margin-top: calc((100vh - var(--side-bar-height)) / 2);
+    z-index: 3000;
+}
+#header .top .sidebar>li a{
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+#header .top .sidebar>li{
+    position: relative;
+}
+#header .top .sidebar{
+    border-radius: 20px;
+    transform: translate(calc(var(--side-bar-width) * -0.8), 0);
+    transition: .5s;
+}
+#header .top .sidebar:hover{
+    transform: translate(-20px, 0);
+}
+#header .top h1{
+    line-height: 70px;
+    position: absolute;
+    left: 5%; top: 3%;
+    font-size: 4.5vw;
+    letter-spacing: -5px;
+}
+#header .top>h2{
+    position: absolute;
+    left: 5%; top: 18%;
+    font-size: 2vw;
+    color: #426073;
+}
+#header .top span{
+    color: white;
+    font-size: 0.8vw;
+}
+#header .main_logo{
+    position: absolute;
+    left: 50%; top: 5%;
+}
+input{
+    position: absolute;
+    width: 120px; height: 60px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#header .top input:hover{
+    background-color: white;
+    color: #000;
+}
+#header .top input{
+    left: 5%; top: 24%;
+    cursor: pointer;
+}
+#section{
+    color: white;
+    width: 100%; height: 100vh;
+}
+#section .car_intro{
+    width: 100%; 
+    height: 110vh;
+    padding-bottom: 1200px;;
+    background-image: url(images/bmwcar.jpg);
+    position: relative;
+    background-size: 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+}
+#section .car_intro .gnb{
+    width: 950px; height: 100px;
+    position: relative;
+    left: 5%; top: 3%;
+    border-bottom: 1px solid white;
+    font-size: 1.5vw;
+}
+#section .car_intro .gnb a{color: white;}
+#section .car_intro .gnb li:nth-child(1){
+    position: absolute;
+    left: 6%; top: 40%;
+}
+#section .car_intro .gnb li:nth-child(2){
+    position: absolute;
+    left: 26%; top: 40%;
+}
+#section .car_intro .gnb li:nth-child(3){
+    position: absolute;
+    left: 52%; top: 40%;
+}
+#section .car_intro .gnb li:nth-child(4){
+    position: absolute;
+    left: 70%; top: 40%;
+}
+#section .car_intro .sub_logo{
+    position: absolute;
+    right: 5%; top: 3%;
+}
+#section .car_intro .car_info{
+    position: relative;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    top: 3%;
+}
+#section .car_intro .car_info strong{
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+#section .car_intro .car_info>li:nth-child(1){
+    position: absolute;
+    left: 150px; top: 20px;
+} 
+#section .car_intro .car_info>li:nth-child(2){
+    position: absolute;
+    left: 350px; top: 20px;
+}
+#section .car_intro .car_info>li:nth-child(3){
+    position: absolute;
+    left: 550px; top: 20px;
+}
+#section .car_intro .intro{
+    width: 800px;
+    position: absolute;
+    right: 0px; top: 150px;
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+#section .car_intro .intro li:nth-child(1){
+    position: absolute;
+    left: 120px; top: 0;
+    font-size: 1.8vw;
+    font-weight: 100;
+}
+#section .car_intro .intro li:nth-child(2){
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 100;
+    left: 150px; top: 100px;
+}
+#section .car_intro .intro li:nth-child(3){
+    position: absolute;
+    font-size: 8vw;
+    font-weight: 500;
+    right: 380px; top: 40px;
+}
+#section .car_intro .intro li:nth-child(4){
+    position: absolute;
+    font-size: 1.8vw;
+    left: 450px; top: 170px;
+}
+#section .howto{
+    width: 100%; height: 100vh;
+    background-image: url(images/drive.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    top: -28px;
+    background-size: 100%;
+    background-position: top left;
+}
+#section .howto .howlogo{
+    position: absolute;
+    left: 100px; top: 20px;
+}
+#section .howto .app> strong{
+    position: absolute;
+    width: 500px;
+    left: 700px; top: 20px;
+    font-size: 7vw;
+    font-weight: 300;
+}
+#section .howto .app{
+    position: absolute;
+    left: 500px; top: 50px;
+    font-size: 2.5vw;
+    font-weight: lighter;
+}
+#section .howto .download{
+    position: absolute;
+    left: 830px; top: 200px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #0065b1;
+}
+#section .museum{
+    background-image: url(images/buliding.png);
+    width: 100%; height: 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0; top: 3118px;
+    background-size: 100%;
+    background-position: top left;
+}
+#section .museum h1{
+    font-size: 3vw;
+    position: absolute;
+    left: 750px; top: 60px;
+}
+#section .museum p{
+    font-size: 1.3vw;
+    position: absolute;
+    font-weight: lighter;
+    left: 880px; top: 200px;
+}
+#section .museum .more{
+    position: absolute;
+    left: 1100px; top: 260px;
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+#section .museum .more:hover{
+    background-color: black;
+    color: white;
+}
+#section .madecar{
+    position: relative;
+    width: 950px; height: 1000px;
+    background-image: url(images/car.jpg);
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.144);
+    top: 1000px; left: 40%;
+}
+
+#section .text{
+    float: left;
+    position: absolute;
+    left: 3%; top: 4100px;
+    color: black;
+}
+#section .text h1{
+    font-size: 5em;
+    margin-left: 100px;
+}
+#section .text h2{
+    font-size: 2em;
+    margin-left: 200px;
+    margin-top: 50px;
+    line-height: 100px;
+}
+#section .text li{
+    font-size: 1.1em;
+    width: 250px; height: 20px;
+    border:1px solid black;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    left: 220px; top: 550px;
+}
+
+#footer{
+    position: relative;
+    width: 100%; 
+}
+#footer .footinfo{
+    position: absolute;
+    left: 100px; top: 1100px;
+    color: black;
+}
+#footer .footphoto{
+    background-image: url(images/driver.jpg);
+    width: 850px; height: 500px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 180px; top: 1100px;
+    background-size: 100%;
+    background-position: top left;
+}
+#footer .footinfo ul{
+    float: left;
+    font-size: 1em;
+    margin-right: 100px;
+    line-height: 30px;
+}
+#footer .footinfo ul li:first-child{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+#footer .privacy {
+    position: absolute;
+    left: 100px; top: 1400px;
+    color: #000;
+}
+#footer .privacy li:nth-child(1){font-weight: 900;}
+#footer .privacy li:nth-child(2){margin-top: 50px;}
+
+/*---------------------------tablet---------------------------*/
+@media all and (min-width:640px) and (max-width:1024px){
+    #header{
+        position: relative;
+        width: 100%; height: 120vh;
+        transition: all 0.3s;
+        background-image: url(images/bmwmain_tbl.jpg);
+    }
+    #header .top .burger{
+        position: absolute;
+        right: 4%; top: 4%;
+        transition: all 0.3s; 
+    }
+    #header .main_logo{
+        position: absolute;
+        left: 45%; top: 2%;
+        transition: all 0.3s;
+        width: 500px;
+    }
+    #header .top h1{
+        position: absolute;
+        left: 5%; top: 15%;
+        transition: all 0.3s;
+        font-size: 5vw;
+    }
+    #header .top h2{
+        position: absolute;
+        left: 5%; top: 29%;
+        transition: all 0.3s;
+        font-size: 2vw;
+    }
+    #header .top input{
+        position: absolute;
+        left: 45%; top: 22%;
+        transition: all 0.3s;
+        width: 100px; 
+    }
+    #section {
+        position: relative;
+        width: 100%;
+    }
+    #section .car_intro{
+        position: absolute;
+        width: 100%;
+        left: 0; top: -40%;
+        background-image: url(images/bmwcar_tbl.jpg);
+        transition: all 0.3s;
+    }
+    #section .car_intro .gnb{
+        font-size: 2vw;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s;
+    }
+    #section .car_intro .car_info{
+        font-size: 0.9em;
+        width: 1000px;
+        letter-spacing: -2px;
+        position: absolute;
+        left: -5%; top: 37%;
+        transition: all 0.3s;
+    }
+    #section .car_intro .sub_logo{
+        display: none;
+    }
+    #section .car_intro .intro{
+        font-size: 1.5em;
+        transition: all 0.3s;
+    }
+    #section .car_intro .intro li:nth-child(1){
+        position: absolute;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    #section .car_intro .intro li:nth-child(2){
+        position: absolute;
+        left: 65%;
+        transition: all 0.3s;
+    }
+    #section .car_intro .intro li:nth-child(3){
+        position: absolute;
+        left: 80%;
+        transition: all 0.3s;
+    }
+    #section .car_intro .intro li:nth-child(4){
+        position: absolute;
+        left: 88%;
+        transition: all 0.3s;
+    }
+    #section .howto{
+        width: 100%;
+        background-image: url(images/bmwdrive_tbl.jpg);
+        transition: all 0.3s;
+        position: relative;
+    }
+    #section .howto .howlogo{
+        display: none;
+    }
+    #section .howto .app{
+        font-size: 3em;
+        position: absolute;
+        left: 50%; top: 5%;
+        transition: all 0.3s;
+    }
+    #section .howto .app p{
+        font-size: 0.5em;
+        position: absolute;
+        left: -60%; top: 150%;
+        width: 500px;
+        transition: all 0.3s;
+    }
+    #section .howto .download{
+        rotate: 8deg;
+        position: absolute;
+        left: 35%; top: 35%;
+        transition: all 0.3s;
+    }
+    #section .museum{
+        width: 100%;
+        background-image: url(images/bmwbulidingtbl.jpg);
+        position: absolute;
+        left: 0; top: 48%;
+        transition: all 0.3s;
+    }
+    #section .museum h1{
+        font-size: 2.5vw;
+        width: 600px;
+        position: absolute;
+        left: 40%; top: 5%;
+        transition: all 0.3s;
+    }
+    #section .museum p{
+        font-size: 1.3vw;
+        width: 220px;
+        position: absolute;
+        left: 55%; top: 15%;
+        transition: all 0.3s;
+    }
+    #section .museum .more{
+        position: absolute;
+        left: 55%; top: 27%;
+        transition: all 0.3s;
+    }
+    #section .madecar{
+        position: absolute;
+        left: 100px; top: 1200px;
+    }
+    #section .text{
+        position: relative;
+        left: 30%; top: 180px;
+        width: 100%; height: 1000px;
+    }
+    #section .text>li:nth-child(1){
+        position: absolute;
+        left: 35%; top: 92%;
+    }
+    #section .text>li:nth-child(2){
+        position: absolute;
+        left: -5%; top: 92%;
+    }
+    #section .text h1{
+        position: absolute;
+        left: ; top: 5%;
+        font-size: 5vw;
+        width: 1000px;
+    }
+    #section .text>h2{
+        position: absolute;
+        left: ; top: 40%;
+        font-size: 2vw;
+    }
+    #footer .footphoto{
+        display: none;
+    }
+    #footer {
+        position: relative;
+        width: 100%; height: 300px;
+        
+        
+    }
+    #footer .footinfo{
+        position: absolute;
+        left: 10%; top: 450%;
+        font-size: 1.5vw;
+    }
+    #footer .privacy{
+        position: absolute;
+        left: 10%; top: 550%;
+        width: 1000px;
+    }
+}
+    /*----------------mobile-------------------*/
+@media all and (max-width:639px){
+    #header{
+        width: 100%; height: 1000px;
+        background-image: url(images/bmwwhite.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: top left;
+        transition: all 0.3s;
+    }
+    #header .main_logo{
+        position: absolute;
+        left: 5%;
+        transition: all 0.3s;
+    }
+    #header .top .burger{
+        position: absolute;
+        right: 5%; top: 8%;
+        transition: all 0.3s;
+    }
+    #header .top h1{display: none;}
+    #header .top h2{display: none;}
+    #header .top input{
+        position: absolute;
+        left: 5%; top: 75%;
+    }
+    #section .car_intro{
+        background-image: url(images/bmwredcarmb.jpg);
+        width: 100%; height: 1000px;
+        position: relative;
+        top: -140px;
+        transition: all 0.3s;
+    }
+    #section .car_intro .gnb{display: none;}
+    #section .car_intro .sub_logo{display: none;}
+    #section .car_intro .car_info{
+        font-size: 15px;
+        position: absolute;
+        left: -30%; top: 65%;
+        transition: all 0.3s;
+        width: 500px;
+        letter-spacing: -2px;
+    }
+    #section .car_intro .car_info strong{
+        font-size: 35px;
+    }
+    #section .car_intro .intro li:nth-child(1){
+        position: absolute;
+        left: 50%; 
+        font-size: 5em;
+        transition: all 0.3s;
+    }
+    #section .car_intro .intro li:nth-child(2){
+        display: none;
+    }
+    #section .car_intro .intro li:nth-child(3){
+        display: none;
+    }
+    #section .car_intro .intro li:nth-child(4){
+        display: none;
+    }
+    #section .howto{
+        background-image: url(images/bmwdrive_mb.jpg);
+        width: 100%; 
+        position: relative;
+        left: ; top: -285px;
+        transition: all 0.3s;
+    }
+    #section .howto .howlogo{
+        display: none;
+    }
+    #section .howto .app{
+        font-size: 10vw;
+        position: absolute;
+        left: 10%; top: 2%;
+        transition: all 0.3s;
+    }
+    #section .howto .app p{
+        display: none;
+    }
+    #section .howto .download{
+        position: absolute;
+        left: 60%; top: 2%;
+        transition: all 0.3s;
+    }
+    #section .museum{
+        width: 100%;
+        background-image: url(images/museum_mb.jpg);
+        transition: all 0.3s;
+        position: relative;
+        left: ; top: -930px;
+    }
+    #section .museum h1{
+        width: 500px;
+        position: absolute;
+        left: 10%; top: 3%;
+        font-size: 6vw;
+        transition: all 0.3s;
+    }
+    #section .museum p{
+        width: 500px;
+        position: absolute;
+        left: 10%; top: 8%;
+        font-size: 3vw;
+        transition: all 0.3s;
+    }
+    #section .museum .more{
+        position: absolute;
+        left: 35%; top: 11%;
+        transition: all 0.3s;
+    }
+    #section .madecar{
+        width: 100%; height: 600px;
+        position: absolute;
+        left: -10px; top: 2300px;
+        background-image: url(images/car_mb.jpg);       
+        background-repeat: no-repeat;
+    }
+    #section .text{
+        position: relative;
+        width: 100%; height: 600px;
+        top: -1500px;
+    }
+    #section .text h1{
+        position: absolute;
+        font-size: 8vw;
+        left: -10px; top: 60px;
+    }
+    #section .text h2{
+        position: absolute;
+        font-size: 3.5vw;
+        left: -200px; top: 350px;
+        line-height: 60px;
+    }
+    #section .text li:nth-child(1){
+        position: absolute;
+        left: 80px; top: 530px;
+    }
+    #section .text li:nth-child(2){
+        position: absolute;
+        left: 80px; top: 270px;
+    }
+    #footer .footinfo{
+        position: relative;
+        width: 100%;
+        left: 100px; top: -800px;
+    }
+    #footer .footinfo ul:nth-child(1){
+        position: absolute;
+        left: -50px; top: 0px;
+    }
+    #footer .footinfo ul:nth-child(2){
+        position: absolute;
+        left: 150px; top: 0px;
+    }
+    #footer .footinfo ul:nth-child(3){
+        position: absolute;
+        display: none;
+    }
+    #footer .privacy{
+        position: absolute;
+        width: 100%; 
+        left: 10px; top: -500px;
+    }
+    #footer .footphoto{display: none;}
+    }
