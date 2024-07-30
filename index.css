@@ -107,7 +107,6 @@ input{
     /* padding-bottom: 500px; */
     /* margin-top: -150px; */
     background-color: salmon;
-
 }
 #section .car_intro .gnb{
     width: 950px; height: 100px;
@@ -200,7 +199,6 @@ input{
     background-repeat: no-repeat;
     position: relative;
     background-size: cover;
-    background-color: darkblue;
 }
 #section .howto .howlogo{
     position: absolute;
@@ -286,7 +284,6 @@ input{
 }
 #section .text h2{
     font-size: 2vw;
-    margin-left: 200px;
     margin-top: 50px;
     line-height: 100px;
 }
@@ -299,6 +296,7 @@ input{
     margin-top: 50px;
     position: relative;
     left: 40%; top: 550px;
+    
 }
 
 #footer{
@@ -483,30 +481,30 @@ input{
     }
     #section .madecar{
         position: absolute;
-        left: 50%; top: 1600px;
+        left:0; top: 1600px;
     }
     #section .text{
         position: relative;
-        left: 30%; top: 180px;
+        top: 500px;
         width: 100%; height: 1000px;
     }
     #section .text>li:nth-child(1){
         position: absolute;
-        left: 35%; top: 92%;
+        left: 10px; top: 1000px;
     }
     #section .text>li:nth-child(2){
         position: absolute;
-        left: -5%; top: 92%;
+        left: 10px; top: 92%;
     }
     #section .text h1{
         position: absolute;
-        left: 0; top: 5%;
+        left: -20px; top: 350px;
         font-size: 5vw;
         width: 100%;
     }
     #section .text>h2{
         position: absolute;
-        left: 0; top: 40%;
+        left: 20px; top: 40%;
         font-size: 2vw;
     }
     #footer .footphoto{
@@ -518,12 +516,12 @@ input{
     }
     #footer .footinfo{
         position: absolute;
-        left: 10%; top: 450%;
+        left: 10%; top: 1900px;
         font-size: 1.5vw;
     }
     #footer .privacy{
         position: absolute;
-        left: 10%; top: 550%;
+        left: 10%; top: 2200px;
         width: 100%;
     }
 }
@@ -540,11 +538,6 @@ input{
     #header .main_logo{
         position: absolute;
         left: 5%;
-        transition: all 0.3s;
-    }
-    #header .top .burger{
-        position: absolute;
-        right: 5%; top: 8%;
         transition: all 0.3s;
     }
     #header .top h1{display: none;}
@@ -590,8 +583,9 @@ input{
     }
     #section .howto{
         background-image: url(images/bmwdrive_mb.jpg);
-        width: 100%; 
+        width: 100%; height: 400px;
         position: relative;
+        background-size: contain;
         left: 0; top: -285px;
         transition: all 0.3s;
     }
@@ -613,74 +607,80 @@ input{
         transition: all 0.3s;
     }
     #section .museum{
-        width: 100%;
+        width: 100%; height: 400px;
         background-image: url(images/museum_mb.jpg);
         transition: all 0.3s;
         position: relative;
-        left: ; top: -930px;
+        top: -280px;
+        background-size: contain;
     }
     #section .museum h1{
         width: 100%;
         position: absolute;
-        left: 10%; top: 3%;
-        font-size: 6vw;
+        left: 70px; top: 3%;
+        font-size: 5vw;
         transition: all 0.3s;
     }
     #section .museum p{
         width: 100%;
         position: absolute;
-        left: 10%; top: 8%;
-        font-size: 3vw;
+        left: 70px; top: 15%;
+        font-size: 2vw;
         transition: all 0.3s;
     }
     #section .museum .more{
         position: absolute;
-        left: 35%; top: 11%;
+        font-size: 2vw;
+        left: 35%; top: 30%;
         transition: all 0.3s;
     }
     #section .madecar{
-        width: 100%; height: 600px;
+        width: 100%; 
         position: absolute;
-        left: -10px; top: 2300px;
+        left: -10px; top: 2500px;
         background-image: url(images/car_mb.jpg);       
         background-repeat: no-repeat;
     }
     #section .text{
         position: relative;
         width: 100%; height: 600px;
-        top: -1500px;
+        top: -300px;
     }
     #section .text h1{
         position: absolute;
         font-size: 8vw;
-        left: -10px; top: 60px;
+        left: -20px; top: 80px;
     }
     #section .text h2{
         position: absolute;
         font-size: 3.5vw;
-        left: -200px; top: 350px;
+        left: 100px; top: 380px;
         line-height: 60px;
     }
     #section .text li:nth-child(1){
         position: absolute;
-        left: 80px; top: 530px;
+        left: 80px; top: 550px;
+        font-size: 20px;
     }
     #section .text li:nth-child(2){
         position: absolute;
-        left: 80px; top: 270px;
+        left: 80px; top: 650px;
+        font-size: 20px;
     }
     #footer .footinfo{
         position: relative;
         width: 100%;
-        left: 100px; top: -800px;
+        left: 100px; top: -3000px;
     }
     #footer .footinfo ul:nth-child(1){
         position: absolute;
-        left: -50px; top: 0px;
+        left: -50px; top: 3800px;
+        font-size: 12px;
     }
     #footer .footinfo ul:nth-child(2){
         position: absolute;
-        left: 150px; top: 0px;
+        left: 100px; top: 3800px;
+        font-size: 12px;
     }
     #footer .footinfo ul:nth-child(3){
         position: absolute;
@@ -689,7 +689,7 @@ input{
     #footer .privacy{
         position: absolute;
         width: 100%; 
-        left: 10px; top: -500px;
+        left: 10px; top: 1200px;
     }
     #footer .footphoto{display: none;}
 }
