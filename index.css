@@ -23,6 +23,9 @@ img{border: 0; vertical-align: top;}
     position: absolute;
     left: 50%; top: 5%;
 }
+#header .main_logo img{
+    width: 100%;
+}
 :root{
     --side-bar-width:270px;
     --side-bar-height:90vh;
@@ -442,9 +445,15 @@ img{border: 0; vertical-align: top;}
 }
 /* -----------------------mobile----------------*/
 @media all and (max-width:768px){
-    #header .main_logo img{width: 80%;}
-    #section .car_intro .sub_logo img{width: 80%;}
-    #section .howto .howlogo img{width: 80%;}
+    #header .main_logo img{width: 60%;}
+    #section .car_intro .sub_logo img{width: 50%;}
+    #section .madecar .text .text_txt>h2{display: none;}
+    #section .madecar .text .text_txt>div{font-size: 2.5vw; padding: 20px 20px; line-height: 5px; margin-top: 30px;}
+    #section .howto .app{padding-top: 2%;}
+    #section .howto .app h1{font-size: 8vw; font-weight: 100;}
+    #section .howto .app p{font-size: 2.5vw;}
+    #section .howto .download{font-size: 1.4vw; margin-top: 13%;}
+    #section .howto .howlogo img{width: 50%;}
     #section .museum .more{
         width:50px; height: 10px;
         padding: 10px 10px;
@@ -452,5 +461,17 @@ img{border: 0; vertical-align: top;}
     }
     #footer .privacy{
         top: 200px;
+    }
+    #section .museum{
+        background-image: url(images/museum_mb.jpg);
+    }
+    #section .museum h1{
+        left: 25%;
+    }
+    #section .museum p{
+        left: 29%;
+    }
+    #section .museum .more{
+        left: 39%;
     }
     }
