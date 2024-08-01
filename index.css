@@ -411,7 +411,7 @@ img{border: 0; vertical-align: top;}
     }
     /* ---------------------------------- */
     #section .madecar{
-        padding-bottom: 125%;
+        padding-bottom: 155%;
         flex-wrap:wrap;
         position: relative;
     }
@@ -423,7 +423,7 @@ img{border: 0; vertical-align: top;}
     #section .madecar .text .text_txt h1{font-size: 5.5vw;}
     #section .madecar .text .text_txt h2{
         margin-top: 1%;
-        margin-bottom: 80%;}
+        margin-bottom: 90%;}
     #section .madecar .text .text_txt>div{
         font-size: 2.5vw; width: 30%; padding-bottom: 5%;
     }
@@ -449,6 +449,7 @@ img{border: 0; vertical-align: top;}
     #section .car_intro .sub_logo img{width: 50%;}
     #section .madecar .text .text_txt>h2{display: none;}
     #section .madecar .text .text_txt>div{font-size: 2.5vw; padding: 20px 20px; line-height: 5px; margin-top: 30px;}
+    #section .madecar .text .text_txt{margin-left: 50px;}
     #section .howto .app{padding-top: 2%;}
     #section .howto .app h1{font-size: 8vw; font-weight: 100;}
     #section .howto .app p{font-size: 2.5vw;}
@@ -458,9 +459,6 @@ img{border: 0; vertical-align: top;}
         width:50px; height: 10px;
         padding: 10px 10px;
         left: 63%;
-    }
-    #footer .privacy{
-        top: 200px;
     }
     #section .museum{
         background-image: url(images/museum_mb.jpg);
@@ -474,4 +472,8 @@ img{border: 0; vertical-align: top;}
     #section .museum .more{
         left: 39%;
     }
+    #footer .privacy{
+        top: 200px;
+    }
+    #footer .footphoto{display: none;}
     }
